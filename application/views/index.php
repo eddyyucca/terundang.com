@@ -10,6 +10,20 @@
     <!-- Favicon -->
     <link rel="icon" href="<?= base_url('assets') ?>/images/favicon.ico" type="image/x-icon">
 
+    <!-- musik -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Root-Icon -->
+    <link rel="stylesheet" href="https://cdn.rootpixel.net/assets/rooticon/v2/rooticon.css">
+    <!-- Glide -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css" integrity="sha512-YQlbvfX5C6Ym6fTUSZ9GZpyB3F92hmQAZTO5YjciedwAaGRI9ccNs4iw2QTCJiSPheUQZomZKHQtuwbHkA9lgw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.theme.min.css" integrity="sha512-wCwx+DYp8LDIaTem/rpXubV/C1WiNRsEVqoztV0NZm8tiTvsUeSlA/Uz02VTGSiqfzAHD4RnqVoevMcRZgYEcQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css" integrity="sha512-kwJUhJJaTDzGp6VTPBbMQWBFUof6+pv0SM3s8fo+E6XnPmVmtfwENK0vHYup3tsYnqHgRDoBDTJWoq7rnQw2+g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Aos Animation on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- App -->
+    <link rel="stylesheet" href="<?= base_url('assets') ?>/musik/css/app.min.css">
+    <!-- end -->
     <!-- Library CSS -->
     <link href="<?= base_url('assets') ?>/css/glanz_library.css" rel="stylesheet">
 
@@ -30,47 +44,36 @@
 
 <!-- Body -->
 
-<body class="gla_middle_titles">
-    <div class="modal" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <p>Modal body text goes here.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+<body class="opening-show gla_middle_titles ">
+
+    <!-- <body class="opening-show"> -->
+    <!-- <body> -->
+
+    <section id="opening">
+        <div class="container text-center" data-aos="fade-in" data-aos-duration="1500">
+            <div class="text-dec text-dec-white mb-4">Wedding Invitation</div>
+            <h5 class="font-type-secondary mb-2">Eddy & Yunita</h5>
+            <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
+
+            <div class="fw-bold mt-8">Halo, <span id="guest">Justin Gouse</span></div>
+            <div>Anda diundang dalam acara pernikahan kami!</div>
+
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button id="btn-open-opening" class="btn btn-primary">Buka Undangan</button>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
     <!-- Page -->
+
+
     <div class="gla_page" id="gla_page">
         <!-- To Top -->
         <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
-
-        <!-- Music -->
-
-        <div class="gla_music_icon">
-            <!-- <a class="ti ti-music">
-            </a> -->
-            <audio controls loop autoplay>
-                <source src="<?= base_url('assets/musik/') ?>musik.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-
-
         <!-- Header -->
         <header>
-
-
-
             <nav class="gla_light_nav gla_transp_nav">
 
                 <div class="container">
@@ -87,15 +90,6 @@
                     </div>
 
                     <!-- Menu -->
-                    <div class="gla_main_menu gla_main_menu_mobile">
-
-                        <div class="gla_main_menu_icon">
-                            <i></i><i></i><i></i><i></i>
-                            <b>Menu</b>
-                            <b class="gla_main_menu_icon_b">Back</b>
-                        </div>
-                    </div>
-
                     <!-- Menu Content -->
                     <div class="gla_main_menu_content gla_image_bck" data-color="rgba(0,0,0,0.9)" data-image="http://placehold.it/1400x800">
                         <!-- Over -->
@@ -529,8 +523,16 @@
         <!-- Content End -->
 
     </div>
-    <!-- Page End -->
+    <button id="btn-play" class="btn btn-light">
+        <i class="ri ri-volume-high"></i>
+    </button>
 
+
+    <audio controls id="audio" class="d-none">
+        <source src="<?= base_url('assets/musik/') ?>musik.mp3" type="audio/mpeg">
+        <!-- Your browser does not support the audio element. -->
+    </audio>
+    <!-- Page End -->
 
 
     <!-- JQuery -->
@@ -540,6 +542,22 @@
 
     <!-- Theme JS -->
     <script src="<?= base_url('assets') ?>/js/glanz_script.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <!-- Lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js" integrity="sha512-b4rL1m5b76KrUhDkj2Vf14Y0l1NtbiNXwV+SzOzLGv6Tz1roJHa70yr8RmTUswrauu2Wgb/xBJPR8v80pQYKtQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Countdown -->
+    <script src="https://cdn.jsdelivr.net/npm/timezz@6.1.0/dist/timezz.min.js"></script>
+    <!-- Glide -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/glide.min.js" integrity="sha512-IkLiryZhI6G4pnA3bBZzYCT9Ewk87U4DGEOz+TnRD3MrKqaUitt+ssHgn2X/sxoM7FxCP/ROUp6wcxjH/GcI5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Aos Animation os scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Anime js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- App -->
+    <script src="<?= base_url('assets') ?>/musik/js/app.js"></script>
+
 
 
 </body>
