@@ -52,18 +52,18 @@
     <section id="opening">
         <div class="container text-center" data-aos="fade-in" data-aos-duration="1500">
             <div class="text-dec text-dec-white mb-4">Wedding Invitation</div>
-            <h5 class="font-type-secondary mb-2">Eddy & Yunita</h5>
-            <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
+            <h2 class="font-type-secondary mb-2">Eddy & Yunita</h5>
+                <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
 
-            <div class="fw-bold mt-8">Halo, <span id="guest">Justin Gouse</span></div>
-            <div>Anda diundang dalam acara pernikahan kami!</div>
+                <div class="fw-bold mt-8">Halo, <span id="guest">Justin Gouse</span></div>
+                <div>Anda diundang dalam acara pernikahan kami!</div>
 
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-auto">
-                    <button id="btn-open-opening" class="btn btn-primary">Buka Undangan</button>
+                <br>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <button id="btn-open-opening" class="btn btn-primary">Buka Undangan</button>
+                    </div>
                 </div>
-            </div>
         </div>
     </section>
     <!-- Page -->
@@ -389,62 +389,18 @@
                     <h2>Registry</h2>
 
                     <p>We’re lucky enough to have nearly everything we need for our home already. And since neither of us has ever been outside of North America, we want our honeymoon to be extra special! If you want to help make it unforgettable, you can contribute using the link to the right. If you would like to give us something to update our home, we’ve compiled a short registry as well.</p>
+                    <div class="col-sm-2"></div>
+                    <div class=" col-sm-8 gla_anim_box grid-item ceremony">
+                        <div class="gla_shop_item">
+                            <a href="https://goo.gl/maps/WEntsWETLYzmSQ429" class="lightbox">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6463.588243132345!2d115.15635549872609!3d-2.9433532474507893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9cdcac2d18040683!2sRumah%20Yunita!5e0!3m2!1sid!2sid!4v1645671219714!5m2!1sid!2sid" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </a>
+                        </div>
+                    </div>
+
 
                     <!-- icon boxes -->
-                    <div class="gla_icon_boxes gla_partners row">
 
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                        <!-- item -->
-                        <div class="gla_partner_box">
-                            <a href="#"><img src="http://placehold.it/250x100" height="80" alt=""></a>
-                        </div>
-
-                    </div>
                     <!-- icon boxes end -->
 
                 </div>
