@@ -1,7 +1,7 @@
 var url = new URL(window.location.href);
 var u = url.searchParams.get("u");
 if (u==null || u=="") {
-    document.getElementById('guest').innerHTML = "Guest";
+    document.getElementById('guest').innerHTML = " ";
 } else {
     document.getElementById('guest').innerHTML = u;
 }

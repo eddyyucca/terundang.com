@@ -8,7 +8,7 @@
 
 
     <!-- Favicon -->
-    <link rel="icon" href="<?= base_url('assets') ?>/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="<?= base_url('assets') ?>/favicon.ico" type="image/x-icon">
 
     <!-- musik -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -52,18 +52,30 @@
     <section id="opening">
         <div class="container text-center" data-aos="fade-in" data-aos-duration="1500">
             <div class="text-dec text-dec-white mb-4">Wedding Invitation</div>
-            <h2 class="font-type-secondary mb-2">Eddy & Yunita</h5>
-                <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
 
-                <div class="fw-bold mt-8">Halo, <span id="guest">Justin Gouse</span></div>
-                <div>Anda diundang dalam acara pernikahan kami!</div>
+            <h2 class="font-type-secondary mb-2"></h2>
+            <h3>Eddy & Yunita</h3>
+            <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
 
-                <br>
-                <div class="row justify-content-center">
-                    <div class="col-auto">
-                        <button id="btn-open-opening" class="btn btn-primary">Buka Undangan</button>
-                    </div>
+            <div class="fw-bold mt-8">
+                <?php if ($undang == false) {
+                    echo "Mengundang Anda";
+                } else {
+                    echo   str_replace("_", " ", $undang);
+                } ?>
+
+                <p hidden> <span id="guest"></span></p>
+
+            </div>
+            <br>
+            <div>Anda diundang dalam acara pernikahan kami!</div>
+
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <button id="btn-open-opening" class="btn btn-primary">Buka Undangan</button>
                 </div>
+            </div>
         </div>
     </section>
     <!-- Page -->
@@ -163,8 +175,8 @@
                             <h3>Yunita Noor Maulidayanti, A.Md.Kes
                                 <br>
                                 Putri Dari <br>
-                                H. Jarmani, S.Pt <br>
-                                Hj. Irmawati
+                                Armi Siswani, S.Pd <br>
+                                Peltu (Purn) Pagianto
                             </h3>
                         </div>
                     </div>
@@ -202,56 +214,38 @@
 
                 <div class="container text-center">
                     <p><img src="<?= base_url('assets') ?>/images/animations/flowers2.gif" data-bottom-top="@src:<?= base_url('assets') ?>/images/animations/flowers2.gif" height="150" alt=""></p>
-                    <h2>Wedding Details</h2>
-                    <h3 class="gla_subtitle">When & Where</h3>
-                    <p>Our ceremony and reception will be held at the Liberty House. Located on the Hudson River, it has a beautiful, unobstructed view of the World Trade One building and a convenient ferry that runs between it and Manhattan.</p>
-                    <!-- boxes -->
+                    <br>
+                    <h3 class="gla_subtitle">Terapkan Protokol Kesehatan</h3>
+
                     <div class="gla_icon_boxes row text-left">
 
-                        <!-- item -->
-                        <div class="col-md-4 col-sm-6">
-                            <a href="#" class="gla_news_block">
-                                <span class="gla_news_img">
-                                    <span class="gla_over" data-image="http://placehold.it/600x600"></span>
-                                </span>
-
-
-                                <span class="gla_news_title">The Venue</span>
-                                <p><strong>St. Thomas's Church,</strong><br>Bristol, U.K.</p>
-
-
-                            </a>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/2.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/2.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-
-                        <!-- item -->
-                        <div class="col-md-4 col-sm-6">
-                            <a href="#" class="gla_news_block">
-                                <span class="gla_news_img">
-                                    <span class="gla_over" data-image="http://placehold.it/600x600"></span>
-                                </span>
-
-
-                                <span class="gla_news_title">What to Wear</span>
-                                <p><strong>Keep it classy</strong>. <br>No jeans or cowboy hats please.</p>
-
-
-                            </a>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/1.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/1.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
-
-
-                        <!-- item -->
-                        <div class="col-md-4 col-sm-6">
-                            <a href="#" class="gla_news_block">
-                                <span class="gla_news_img">
-                                    <span class="gla_over" data-image="http://placehold.it/600x600"></span>
-                                </span>
-
-
-                                <span class="gla_news_title">Parking</span>
-                                <p>There is a parking lot on premises as well as down the street <strong>near the candy store</strong>.</p>
-
-
-                            </a>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/4.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/3.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/3.jpg" alt="">
+                                </a>
+                            </div>
                         </div>
 
 
@@ -267,7 +261,7 @@
 
 
             <!-- section -->
-            <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets') ?>/images/protokol.png">
+            <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets') ?>/images/pay1.jpg">
 
                 <!-- Over -->
                 <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
@@ -275,16 +269,23 @@
                 <div class="container text-center">
 
                     <h3>Amplop Digital</h3>
-                    <p class="gla_subtitle">— Brennan. A true master of words.</p>
+                    <p class="gla_subtitle">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
+                        Dan jika memberi adalah ungkapan tanda kasih anda, Anda dapat memberi kado secara cashless.</p>
                     <div class=" col-sm-4 gla_anim_box grid-item engagement">
                     </div>
-                    <div class=" col-sm-4 gla_anim_box grid-item engagement">
-                        <div class="gla_shop_item">
-                            <a href="<?= base_url('assets') ?>/images/mandiri.jpg" class="lightbox">
-                                <img src="<?= base_url('assets') ?>/images/mandiri.jpg" alt="">
-                            </a>
-                        </div>
+                    <div class="col-md-4 col-sm-6">
+
+                        <a class="gla_news_block">
+                            <span class="gla_news_img">
+                                <span class="gla_over" data-image="<?= base_url('assets') ?>/images/bank_bri.jpg"></span>
+                            </span>
+                            <span class="gla_news_title">456301007959539</span>
+                            <p><strong>An. Eddy Adha Saputra</strong></p>
+
+
+                        </a>
                     </div>
+
 
 
                 </div>
@@ -362,8 +363,8 @@
                         <!-- item -->
                         <div class="col-sm-4 gla_anim_box grid-item ceremony">
                             <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0612_1.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0612_1.jpg" alt="">
+                                <a href="<?= base_url('assets') ?>/images/mencuci_tangan.png" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/mencuci_tangan.png" alt="">
                                 </a>
                             </div>
                         </div>
@@ -376,24 +377,27 @@
 
             </section>
             <!-- section end -->
-
+            <!-- section -->
+            <!-- s -->
+            <!-- section end -->
 
             <!-- section -->
-            <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets') ?>/images/protokol.png">
+            <section class="gla_section gla_image_bck gla_wht_txt gla_fixed" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets/images/thanks.jpg') ?>">
 
                 <!-- Over -->
                 <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
 
                 <div class="container text-center">
 
-                    <h2>Registry</h2>
+                    <h2>Danah Lokasi</h2>
 
-                    <p>We’re lucky enough to have nearly everything we need for our home already. And since neither of us has ever been outside of North America, we want our honeymoon to be extra special! If you want to help make it unforgettable, you can contribute using the link to the right. If you would like to give us something to update our home, we’ve compiled a short registry as well.</p>
+                    <p>komplek asabri citra kartika eka paksi blok.B No.8 rt.013 rw.005. rangda malingkung. tapin utara. tapin. kalimantan selatan.
+                    </p>
                     <div class="col-sm-2"></div>
                     <div class=" col-sm-8 gla_anim_box grid-item ceremony">
                         <div class="gla_shop_item">
-                            <a href="https://goo.gl/maps/WEntsWETLYzmSQ429" class="lightbox">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6463.588243132345!2d115.15635549872609!3d-2.9433532474507893!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9cdcac2d18040683!2sRumah%20Yunita!5e0!3m2!1sid!2sid!4v1645671219714!5m2!1sid!2sid" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            <a href="https://goo.gl/maps/LxD9rWN7cCcdSJjJ6" class="lightbox">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15938.213841374276!2d115.1573353!3d-2.943759!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9cdcac2d18040683!2sRumah%20Yunita!5e0!3m2!1sid!2sid!4v1645964168025!5m2!1sid!2sid" width="100%" height="480" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </a>
                         </div>
                     </div>
@@ -419,7 +423,7 @@
 
                     <div class="row">
                         <div class="col-md-8 col-md-push-2">
-                            <form action="<?= base_url('home/undangan') ?>" method="POST">
+                            <form action="<?= base_url('home/ucapan') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Nama Anda</label>
@@ -433,15 +437,14 @@
                                     <div class="col-md-6">
                                         <label>Datang Saat Acara ?</label>
 
-                                        <input type="radio" name="attend" value="Ya">
+                                        <input type="radio" name="kehadiran" value="Ya">
                                         <span>Ya, Saya Hadir.</span><br>
                                         <input type="radio" name="attend" value="Tidak">
                                         <span>Maaf Tidak Bisa Hadir</span>
-
                                     </div>
                                     <div class="col-md-12">
                                         <label>Notes</label>
-                                        <textarea name="message" class="form-control form-opacity"></textarea>
+                                        <textarea name="isi" class="form-control form-opacity"></textarea>
                                     </div>
                                     <div class="col-md-12">
                                         <input type="submit" class="btn submit" value="Send">
@@ -450,47 +453,33 @@
                             </form>
                         </div>
                     </div>
-
-
                 </div>
                 <!-- container end -->
-
             </section>
             <!-- section end -->
 
             <!-- section -->
             <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets/images/thanks.jpg') ?>">
-
                 <!-- Over -->
                 <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
 
                 <div class="container text-center">
                     <p><img src="<?= base_url('assets') ?>/images/animations/thnyou_wh.gif" alt="" height="200" data-bottom-top="@src:<?= base_url('assets') ?>/images/animations/thnyou_wh.gif"></p>
-
-
-
                 </div>
                 <!-- container end -->
-
             </section>
             <!-- section end -->
-
         </section>
         <!-- Content End -->
-
     </div>
     <button id="btn-play" class="btn btn-light">
         <i class="ri ri-volume-high"></i>
     </button>
-
-
     <audio controls id="audio" class="d-none">
-        <source src="<?= base_url('assets/musik/') ?>musik.mp3" type="audio/mpeg">
+        <source src="<?= base_url('assets/musik/') ?>musik_wedding.mp3" type="audio/mpeg">
         <!-- Your browser does not support the audio element. -->
     </audio>
     <!-- Page End -->
-
-
     <!-- JQuery -->
     <script src="<?= base_url('assets') ?>/js/jquery-1.12.4.min.js"></script>
     <!-- Library JS -->
