@@ -58,11 +58,11 @@
             <img src="<?= base_url('assets') ?>/musik/img/decoration/foliage-horizontal-1.svg" alt="" class="w-75 w-md-30rem my-3">
 
             <div class="fw-bold mt-8">
-                <?php if ($undang == false) {
-                    echo "Mengundang Anda";
-                } else {
-                    echo   str_replace("_", " ", $undang);
-                } ?>
+                <?php if ($undang == false) { ?>
+                    <h3> <?php echo "Mengundang Anda"; ?> </h3>
+                <?php } else { ?>
+                    <h3> <?php echo   str_replace("_", " ", $undang); ?> </h3>
+                <?php } ?>
 
                 <p hidden> <span id="guest"></span></p>
 
@@ -209,47 +209,27 @@
 
 
             <!-- section -->
+
+            <!-- section end -->
+            <!-- ssss -->
             <section class="gla_section">
 
 
                 <div class="container text-center">
-                    <p><img src="<?= base_url('assets') ?>/images/animations/flowers2.gif" data-bottom-top="@src:<?= base_url('assets') ?>/images/animations/flowers2.gif" height="150" alt=""></p>
-                    <br>
-                    <h3 class="gla_subtitle">Terapkan Protokol Kesehatan</h3>
-
+                    <h2 class="gla_subtitle">FIlter Instagram</h2>
+                    <h4>Gunakan filter instagram di acara wedding kami</h4>
                     <div class="gla_icon_boxes row text-left">
-
-                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                        <div class="col-sm-4 gla_anim_box grid-item ceremony">
+                        </div>
+                        <div class="col-sm-4 gla_anim_box grid-item ceremony">
                             <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/2.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/2.jpg" alt="">
+                                <a href="<?= base_url('assets') ?>/images/filter.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/filter.jpg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
-                            <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/1.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/1.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
-                            <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/4.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/4.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
-                            <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/3.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/3.jpg" alt="">
-                                </a>
-                            </div>
-                        </div>
-
-
                     </div>
+                    <a href="https://www.instagram.com/ar/663738727963179" target="_blank" class="btn btn-primarry mt-3">Klik FIlter Instagram</a>
                     <!-- boxes end -->
 
 
@@ -257,9 +237,6 @@
                 <!-- container end -->
 
             </section>
-            <!-- section end -->
-
-
             <!-- section -->
             <section class="gla_section gla_image_bck gla_fixed gla_wht_txt" data-stellar-background-ratio="0.8" data-image="<?= base_url('assets') ?>/images/pay1.jpg">
 
@@ -269,17 +246,17 @@
                 <div class="container text-center">
 
                     <h3>Amplop Digital</h3>
-                    <p class="gla_subtitle">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
-                        Dan jika memberi adalah ungkapan tanda kasih anda, Anda dapat memberi kado secara cashless.</p>
+                    <h5 class="gla_subtitle mt-2">Doa Restu Anda merupakan karunia yang sangat berarti bagi kami.
+                        Dan jika memberi adalah ungkapan tanda kasih anda, Anda dapat memberi kado secara cashless.</h5>
                     <div class=" col-sm-4 gla_anim_box grid-item engagement">
                     </div>
                     <div class="col-md-4 col-sm-6">
 
                         <a class="gla_news_block">
                             <span class="gla_news_img">
-                                <span class="gla_over" data-image="<?= base_url('assets') ?>/images/bank_bri.jpg"></span>
+                                <span class="gla_over" data-image="<?= base_url('assets') ?>/images/BANK.png"></span>
                             </span>
-                            <span class="gla_news_title">456301007959539</span>
+                            <span class="gla_news_title">BRI - 456301007959539</span>
                             <p><strong>An. Eddy Adha Saputra</strong></p>
 
 
@@ -317,8 +294,8 @@
                         <!-- item -->
                         <div class="col-sm-4 gla_anim_box grid-item engagement">
                             <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0633_1.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0633_1.jpg" alt="">
+                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0634_1.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0634_1.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -353,8 +330,8 @@
                         <!-- item -->
                         <div class="col-sm-4 gla_anim_box grid-item engagement">
                             <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0622_1.jpg" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0622_1.jpg" alt="">
+                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0623_1.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0623_1.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -363,8 +340,8 @@
                         <!-- item -->
                         <div class="col-sm-4 gla_anim_box grid-item ceremony">
                             <div class="gla_shop_item">
-                                <a href="<?= base_url('assets') ?>/images/mencuci_tangan.png" class="lightbox">
-                                    <img src="<?= base_url('assets') ?>/images/mencuci_tangan.png" alt="">
+                                <a href="<?= base_url('assets') ?>/images/foto/HBBP0627_1.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/foto/HBBP0627_1.jpg" alt="">
                                 </a>
                             </div>
                         </div>
@@ -413,7 +390,52 @@
             </section>
             <!-- section end -->
 
+            <section class="gla_section">
+                <div class="container text-center">
+                    <p><img src="<?= base_url('assets') ?>/images/animations/flowers2.gif" data-bottom-top="@src:<?= base_url('assets') ?>/images/animations/flowers2.gif" height="150" alt=""></p>
+                    <br>
+                    <h3 class="gla_subtitle">Terapkan Protokol Kesehatan</h3>
 
+                    <div class="gla_icon_boxes row text-left">
+
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/2.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/1.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/1.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/4.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/4.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 gla_anim_box grid-item ceremony">
+                            <div class="gla_shop_item">
+                                <a href="<?= base_url('assets') ?>/images/3.jpg" class="lightbox">
+                                    <img src="<?= base_url('assets') ?>/images/3.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- boxes end -->
+
+
+                </div>
+                <!-- container end -->
+
+            </section>
             <!-- section -->
             <section class="gla_section">
 
@@ -427,11 +449,11 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Nama Anda</label>
-                                        <input type="text" name="nama" class="form-control form-opacity">
+                                        <input type="text" name="nama" class="form-control form-opacity" required>
                                     </div>
                                     <div class="col-md-6">
                                         <label>E-mail Anda</label>
-                                        <input type="text" name="email" class="form-control form-opacity">
+                                        <input type="text" required name="email" class="form-control form-opacity">
                                     </div>
 
                                     <div class="col-md-6">
@@ -444,10 +466,10 @@
                                     </div>
                                     <div class="col-md-12">
                                         <label>Notes</label>
-                                        <textarea name="isi" class="form-control form-opacity"></textarea>
+                                        <textarea name="isi" required class="form-control form-opacity"></textarea>
                                     </div>
                                     <div class="col-md-12">
-                                        <input type="submit" class="btn submit" value="Send">
+                                        <input type="submit" class="btn submit" value="Kirim">
                                     </div>
                                 </div>
                             </form>
@@ -471,7 +493,9 @@
             <!-- section end -->
         </section>
         <!-- Content End -->
+
     </div>
+
     <button id="btn-play" class="btn btn-light">
         <i class="ri ri-volume-high"></i>
     </button>
